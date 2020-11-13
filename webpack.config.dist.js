@@ -1,38 +1,29 @@
-const path = require('path');
-const HtmlWebPackPlugin = require("html-webpack-plugin");
 // const autoprefixer = require('autoprefixer');
 // const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: 'production',
-  devtool: "source-map",
-  entry: {
-    "docs.js": "./docs/index.js"
-  },
+  mode: 'development',
+  entry: './src/index.js',
   output: {
-    path: path.join(__dirname, "build"),
-    filename: "[name]"
+    // path: path.resolve(__dirname, 'dist'),
+    // filename: 'bundle.js',
+    // publicPath: ''
+    library: "Slider",
+    libraryTarget: "umd",
+    path: path.join(__dirname, "dist")
   },
+  devtool: 'cheap-module-eval-source-map',
   module: {
     rules: [
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        exclude: /node_modules/,
+        exclude: /node_modules/
       },
-      {
-        test: /\.html$/,
-        use: [
-          {
-            loader: "html-loader"
-          }
-        ]
-      }
     ]
   },
   plugins: [
   ],
-  /*
   externals: {
     react: {
       root: "React",
@@ -47,5 +38,4 @@ module.exports = {
       amd: "react-dom"
     }
   },
-  */
 };

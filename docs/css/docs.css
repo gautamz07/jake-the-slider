@@ -1,4 +1,27 @@
 
+body {
+  padding: 0;
+  margin:0;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.slider-content {
+  max-width: 500px;
+  margin: 0  auto;
+}
+
+#rapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
 h3 {
   background: #00558B;
   color: #fff;

@@ -1,26 +1,61 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="/slick.css">
-    <link rel="stylesheet" href="/slick-theme.css">
-    <link rel="stylesheet" href="/docs.css">
-  </head>
-  <body>
-    <div id='rapp'></div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js"></script>
-    <script type="text/javascript">
-      if ('addEventListener' in document) {
-        document.addEventListener('DOMContentLoaded', function() {
-            FastClick.attach(document.body);
-        }, false);
-      }
-    </script>
-    <script type="module"src='/docs.js' ></script>
-    <!-- For Mobile Degbugging
-    <script src="http://192.168.0.100:8080/target/target-script-min.js#anonymous"></script>
-    -->
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <header class="site__navigation">
+    <div class="container">
+        <div class="site__logo">
+          Jake The slider
+        </div>      
+    </div>
+  </header>
+    <main>
+      <div class="container container__apiinfo">
+        <div class="row row__flex">
+          <aside class="sidemenu__main col">
+            <ul class="sidemenu__list">
+              <li><a href="index.html">Getting started</a></li>
+              <li><a href="example.html">Settings/Configs</a></li>
+            </ul>
+          </aside>
+          <section class="col">
+            <header class="section__header">
+              <h3>Settings/Configurations</h3>
+            </header>
+            <div class="settings__infocard">
+              <h5>accessibility</h5>
+              <dl>
+                <dt>Type</dt>
+                <dd>bool</dd>
+                <dt>Default</dt>
+                <dd>true</dd>
+              </dl>
+            </div>
+            <div class="settings__infocard">
+                <h5>accessibility</h5>
+                <dl>
+                  <dt>Type</dt>
+                  <dd>bool</dd>
+                  <dt>Default</dt>
+                  <dd>true</dd>
+                </dl>
+              </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  <footer>
+    <div class="container">
+
+    </div>
+  </footer>
+</body>
 </html>

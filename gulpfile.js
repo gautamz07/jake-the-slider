@@ -5,9 +5,6 @@ var WebpackDevServer = require("webpack-dev-server");
 var opn = require("opn");
 
 gulp.task("server", function() {
-  console.log('LOOL !')
-  console.log('start');
-
   var myConfig = require("./webpack.config");
 
   new WebpackDevServer(webpack(myConfig), {
