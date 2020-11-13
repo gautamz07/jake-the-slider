@@ -5,13 +5,10 @@ var WebpackDevServer = require("webpack-dev-server");
 var opn = require("opn");
 
 gulp.task("server", function() {
-  console.log('LOOL !')
-  console.log('start');
-
   var myConfig = require("./webpack.config");
 
   new WebpackDevServer(webpack(myConfig), {
-    contentBase: './docx',
+    contentBase: './docs',
     hot:true,
     stats: {
       color: true,
