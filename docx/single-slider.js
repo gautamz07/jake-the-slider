@@ -1,6 +1,5 @@
-import Slider from './lib/index'
-
-const e = React.createElement;
+import Slider from '../lib/index'
+import React from "react";
 
 const settings = {
   dots: true,
@@ -13,13 +12,8 @@ const settings = {
 };
 
 class MySlider extends React.Component {
-  constructor() {
-
-  }
-
-
   render() {
-    return e(
+    return (
       <Slider {...settings}>
         <div>
           <h1>1</h1>

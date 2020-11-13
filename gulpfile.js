@@ -11,7 +11,7 @@ gulp.task("server", function() {
   var myConfig = require("./webpack.config");
 
   new WebpackDevServer(webpack(myConfig), {
-    contentBase: './docs',
+    contentBase: './docx',
     hot:true,
     stats: {
       color: true,

@@ -1,7 +1,5 @@
-"use strict";
-
 import React from "react";
-import Demos from "./demos";
+import SimpleSlider from "./SimpleSlider";
 
 export default class Docs extends React.Component {
   render() {
@@ -12,7 +10,7 @@ export default class Docs extends React.Component {
         </div>
         <div className="">
           <div className="">
-            <Demos />
+            <SimpleSlider />
           </div>
         </div>
       </div>
