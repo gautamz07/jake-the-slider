@@ -1,12 +1,18 @@
 {
   "name": "jake-the-slider",
   "version": "1.0.2",
-  "description": "Single slider is created just to keep the functionality of a single slide intact.",
+  "description": "A port from react-slick just for a single slider functionality",
+  "keywords": [
+    "React slider",
+    "slider",
+    "React carousel"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "lib": "babel ./src --out-dir ./lib"
+    "lib": "babel ./src --out-dir ./lib",
+    "start": "gulp server"
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +26,8 @@
     "html-webpack-plugin": "^4.5.0",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.0",
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.0"
   }
 }
