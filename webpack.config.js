@@ -7,10 +7,10 @@ module.exports = {
   mode: 'production',
   devtool: "source-map",
   entry: {
-    "docs.js": "./docs/index.js"
+    "bundle.js": "./docs/index.js"
   },
   output: {
-    path: path.join(__dirname, "build"),
+    path: path.join(__dirname, "docs"),
     filename: "[name]"
   },
   module: {
